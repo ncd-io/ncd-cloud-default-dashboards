@@ -1,0 +1,1608 @@
+[
+  {
+    "__model__": "dashboard",
+    "label": "type-88-one-channel-ultrasound-vibration-sensor-template",
+    "name": "Type88-1-channel-ultrasound-vibration-sensor-template",
+    "description": "",
+    "tags": [],
+    "context": {
+      "size": "auto",
+      "alignment": "center",
+      "isDynamic": true,
+      "uxSettings": {
+        "widgets": {
+          "dropShadow": {
+            "x": null,
+            "y": null,
+            "blur": null,
+            "spread": null,
+            "shadowColor": {
+              "a": 1,
+              "b": 94,
+              "g": 94,
+              "r": 94
+            }
+          },
+          "backgroundColor": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "dashboard": {
+          "override": false,
+          "titleColor": "#ffffff",
+          "numberFormat": "#,###.#",
+          "decimalPlaces": null,
+          "titleFontSize": 24,
+          "backgroundColor": {
+            "a": 1,
+            "b": 242,
+            "g": 242,
+            "r": 242
+          },
+          "titleFontFamily": "Open Sans"
+        }
+      },
+      "displayName": "name",
+      "__customStyle": {
+        "widget": {
+          "color": "#E8E8E8",
+          "header": {
+            "color": "#FFFFFF",
+            "height": "35px",
+            "fontSize": 18,
+            "alignSelf": "center",
+            "textAlign": "left",
+            "fontFamily": "Rajdhani, sans-serif",
+            "fontWeight": "600",
+            "backgroundColor": "#141416"
+          },
+          "fontSize": 14,
+          "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 136, 91, 0.4)",
+          "background": "linear-gradient(to bottom, black, #363636)",
+          "fontFamily": "Rajdhani, sans-serif",
+          "borderStyle": "none",
+          "borderWidth": 0,
+          "borderRadius": 20
+        },
+        "dashboard": {
+          "color": "#F0F0F0",
+          "fontSize": 15,
+          "fontFamily": "Rajdhani, sans-serif",
+          "backgroundColor": "#0B0B0F"
+        },
+        "contextBar": {
+          "color": "#F0F0F0",
+          "title": {
+            "fontSize": 20,
+            "fontWeight": "700"
+          },
+          "fontSize": 16,
+          "fontFamily": "Rajdhani, sans-serif",
+          "backgroundColor": "#0B0B0F"
+        }
+      },
+      "dashboardPage": {
+        "url": "",
+        "type": "default"
+      },
+      "dashboardType": "one-device",
+      "defaultDevice": "~00:13:a2:00:42:53:64:53",
+      "hasBackground": false,
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "organizations": [],
+      "temporalxaxis": "dynamic",
+      "filterSettings": {},
+      "hideDatePicker": false,
+      "sizeAdjustment": "auto",
+      "widgetsOpacity": 0.5,
+      "floatingWidgets": false,
+      "timestampFormat": "MM/DD/YYYY HH:mm",
+      "deviceFilterType": "device_group",
+      "devicesDropdownIcon": "microchip",
+      "hideDashboardLayers": true,
+      "deviceFilterEntityId": "~type-88-group",
+      "dashboardNumberFormat": "#,###.#",
+      "widgetVerticalSpacing": "20",
+      "hideHeaderFooterWidgets": true,
+      "widgetHorizontalSpacing": "20",
+      "prospector_is_filters_last_value_alt": false
+    },
+    "timeframe": {
+      "endDate": "now",
+      "startDate": "now-24h"
+    },
+    "isEditable": true,
+    "order": 1
+  },
+  {
+    "__model__": "widget",
+    "name": "Battery percentage",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 3,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "battery_percent",
+            "span": "inherit",
+            "color": "#91f915ff",
+            "label": "battery_percent",
+            "variableColor": {
+              "a": 1,
+              "b": 21,
+              "g": 249,
+              "r": 145
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 2
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-sort-numeric-up\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">Battery percentage</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}} {{variable.unit}}\n  </p>\n</div>",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "rssi",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 3,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "rssi",
+            "span": "inherit",
+            "color": "#b86c58ff",
+            "label": "rssi",
+            "variableColor": {
+              "a": 1,
+              "b": 88,
+              "g": 108,
+              "r": 184
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 0
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-signal\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">RSSI</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}}\n  </p>\n</div>\n\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "Firmware",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 3,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "firmware",
+            "span": "inherit",
+            "color": "#929f27ff",
+            "label": "firmware",
+            "variableColor": {
+              "a": 1,
+              "b": 39,
+              "g": 159,
+              "r": 146
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 0
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-code-branch\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">Firmware</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}}\n  </p>\n</div>\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "Transmission Counter",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 3,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "counter",
+            "span": "inherit",
+            "color": "#b99c3dff",
+            "label": "counter",
+            "variableColor": {
+              "a": 1,
+              "b": 61,
+              "g": 156,
+              "r": 185
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 0
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-sort-numeric-up\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">Transmission Counter</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}}\n  </p>\n</div>\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "Decibel",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 18,
+        "x": 6,
+        "y": 13
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "series",
+    "settings": {
+      "config": {
+        "grid": {
+          "top": 10,
+          "left": 60,
+          "right": 60,
+          "bottom": 60,
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "z": 2,
+            "name": "",
+            "type": "time",
+            "nameGap": 28,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "axisTick": null,
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5E5E5E"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#A4A5A7"
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "max": "dataMax",
+            "min": "dataMin",
+            "name": "[dB]",
+            "show": true,
+            "type": "value",
+            "offset": 0,
+            "nameGap": 70,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "position": "left",
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "gridIndex": 0,
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5e5e5e"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#5E5E5E"
+            }
+          }
+        ],
+        "legend": {
+          "top": 0,
+          "show": false,
+          "type": "scroll",
+          "itemWidth": 15,
+          "textStyle": {
+            "color": "#5E5E5E"
+          },
+          "itemHeight": 7,
+          "pageIconColor": "#5E5E5E",
+          "pageTextStyle": {
+            "color": "#5E5E5E"
+          },
+          "pageIconInactiveColor": "#5E5E5E"
+        },
+        "series": [
+          {
+            "z": 0,
+            "name": "{{variable.name}} [{{variable.unit}}] ({{device.name}})",
+            "step": false,
+            "type": "line",
+            "stack": null,
+            "symbol": null,
+            "markLine": {},
+            "animation": false,
+            "itemStyle": {
+              "color": "#f75105",
+              "opacity": 0.8,
+              "borderColor": "#f75105"
+            },
+            "lineStyle": {
+              "color": "#f75105",
+              "width": 2
+            },
+            "showSymbol": false,
+            "symbolSize": 8,
+            "yAxisIndex": 0,
+            "connectNulls": true
+          }
+        ],
+        "tooltip": {
+          "confine": true,
+          "trigger": "axis"
+        },
+        "dataZoom": [
+          {
+            "left": 45,
+            "show": true,
+            "right": 45,
+            "realtime": false,
+            "textStyle": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "filterMode": "none",
+            "xAxisIndex": 0,
+            "dataBackground": {
+              "areaStyle": {
+                "color": "#5E5E5E"
+              }
+            }
+          }
+        ]
+      },
+      "dataFetch": "inherit",
+      "seriesTypes": [
+        "line"
+      ],
+      "dataEntities": {
+        "devices": [],
+        "variables": [
+          {
+            "name": "ma",
+            "span": "inherit",
+            "unit": null,
+            "color": "#f75105",
+            "label": "db",
+            "period": null,
+            "chartType": "line",
+            "variableColor": {
+              "a": 1,
+              "b": 114,
+              "g": 109,
+              "r": 224
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "horizontalLinesAndLabels": [
+        {}
+      ]
+    },
+    "uxSettings": {
+      "font": {
+        "size": 14,
+        "family": "Nunito"
+      },
+      "hoverGroup": true,
+      "__customStyle": null,
+      "decimalPlaces": null,
+      "timestampFormat": null
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "miliamps",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 18,
+        "x": 6,
+        "y": 3
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "series",
+    "settings": {
+      "config": {
+        "grid": {
+          "top": 10,
+          "left": 60,
+          "right": 60,
+          "bottom": 60,
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "z": 2,
+            "name": "",
+            "type": "time",
+            "nameGap": 28,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "axisTick": null,
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5E5E5E"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#A4A5A7"
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "max": "dataMax",
+            "min": "dataMin",
+            "name": "[mA]",
+            "show": true,
+            "type": "value",
+            "offset": 0,
+            "nameGap": 70,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "position": "left",
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "gridIndex": 0,
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5e5e5e"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#5E5E5E"
+            }
+          }
+        ],
+        "legend": {
+          "top": 0,
+          "show": false,
+          "type": "scroll",
+          "itemWidth": 15,
+          "textStyle": {
+            "color": "#5E5E5E"
+          },
+          "itemHeight": 7,
+          "pageIconColor": "#5E5E5E",
+          "pageTextStyle": {
+            "color": "#5E5E5E"
+          },
+          "pageIconInactiveColor": "#5E5E5E"
+        },
+        "series": [
+          {
+            "z": 0,
+            "name": "{{variable.name}} [{{variable.unit}}] ({{device.name}})",
+            "step": false,
+            "type": "line",
+            "stack": null,
+            "symbol": null,
+            "markLine": {},
+            "animation": false,
+            "itemStyle": {
+              "color": "#f75105",
+              "opacity": 0.8,
+              "borderColor": "#f75105"
+            },
+            "lineStyle": {
+              "color": "#f75105",
+              "width": 2
+            },
+            "showSymbol": false,
+            "symbolSize": 8,
+            "yAxisIndex": 0,
+            "connectNulls": true
+          }
+        ],
+        "tooltip": {
+          "confine": true,
+          "trigger": "axis"
+        },
+        "dataZoom": [
+          {
+            "left": 45,
+            "show": true,
+            "right": 45,
+            "realtime": false,
+            "textStyle": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "filterMode": "none",
+            "xAxisIndex": 0,
+            "dataBackground": {
+              "areaStyle": {
+                "color": "#5E5E5E"
+              }
+            }
+          }
+        ]
+      },
+      "dataFetch": "inherit",
+      "seriesTypes": [
+        "line"
+      ],
+      "dataEntities": {
+        "devices": [],
+        "variables": [
+          {
+            "name": "ma",
+            "span": "inherit",
+            "unit": null,
+            "color": "#f75105",
+            "label": "ma",
+            "period": null,
+            "chartType": "line",
+            "variableColor": {
+              "a": 1,
+              "b": 114,
+              "g": 109,
+              "r": 224
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "horizontalLinesAndLabels": [
+        {}
+      ]
+    },
+    "uxSettings": {
+      "font": {
+        "size": 14,
+        "family": "Nunito"
+      },
+      "hoverGroup": true,
+      "__customStyle": null,
+      "decimalPlaces": null,
+      "timestampFormat": null
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "rssi",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 8
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "rssi",
+            "span": "inherit",
+            "color": "#b86c58ff",
+            "label": "raw_adc",
+            "variableColor": {
+              "a": 1,
+              "b": 88,
+              "g": 108,
+              "r": 184
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 0
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-wave-square\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">ADC</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}}\n  </p>\n</div>\n\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "rssi",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 13
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "rssi",
+            "span": "inherit",
+            "color": "#b86c58ff",
+            "label": "db",
+            "variableColor": {
+              "a": 1,
+              "b": 88,
+              "g": 108,
+              "r": 184
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 2
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-waveform-lines\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">Decibel</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}} {{variable.unit}}\n  </p>\n</div>\n\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "milliamps",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 6,
+        "x": 0,
+        "y": 3
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "metric",
+    "settings": {
+      "dataFetch": "inherit",
+      "dataEntities": {
+        "variables": [
+          {
+            "name": "rssi",
+            "span": "inherit",
+            "color": "#b86c58ff",
+            "label": "ma",
+            "variableColor": {
+              "a": 1,
+              "b": 88,
+              "g": 108,
+              "r": 184
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "decimalPoints": 2
+    },
+    "uxSettings": {
+      "colors": [
+        {
+          "color": "#C4C4C4",
+          "range": 0
+        },
+        {
+          "color": "#4BA651",
+          "range": 1
+        }
+      ],
+      "useHtml": true,
+      "customHtml": "<div style=\"display:flex;flex-direction:column;gap:0.5rem;font-family:'Rajdhani',sans-serif;color:#E0E0E0;\">\n  <div style=\"display:flex;align-items:center;gap:0.5rem;\">\n    <i class=\"fas fa-wave-pulse\" style=\"color:#F75105;font-size:1.5rem;\"></i>\n    <span style=\"font-size:1rem;font-weight:600;color:#FFFFFF;\">milliamps</span>\n  </div>\n  <p style=\"margin:0;font-size:2.5rem;font-weight:700;color:#F75105;\">\n    {{value}} {{variable.unit}}\n  </p>\n</div>\n\n",
+      "fontFamily": "Open Sans",
+      "__customStyle": null,
+      "colorBehavior": "widget",
+      "imageSettings": {
+        "isUrlValue": false
+      },
+      "backgroundColor": {
+        "colorMode": "setByWidget",
+        "colorLogic": [
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 212,
+              "g": 188,
+              "r": 0
+            }
+          },
+          {
+            "to": "",
+            "from": "",
+            "color": {
+              "a": 1,
+              "b": 12,
+              "g": 163,
+              "r": 255
+            }
+          }
+        ],
+        "setByWidget": {
+          "a": 0,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        }
+      },
+      "timestampFormat": null,
+      "showLastUpdatedInfo": true
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "Raw Analog to Digital Converter",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 18,
+        "x": 6,
+        "y": 8
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "series",
+    "settings": {
+      "config": {
+        "grid": {
+          "top": 10,
+          "left": 60,
+          "right": 60,
+          "bottom": 60,
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "z": 2,
+            "name": "",
+            "type": "time",
+            "nameGap": 28,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "axisTick": null,
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5E5E5E"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#A4A5A7"
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "max": "dataMax",
+            "min": "dataMin",
+            "name": "[ADC]",
+            "show": true,
+            "type": "value",
+            "offset": 0,
+            "nameGap": 70,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "position": "left",
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "gridIndex": 0,
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5e5e5e"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#5E5E5E"
+            }
+          }
+        ],
+        "legend": {
+          "top": 0,
+          "show": false,
+          "type": "scroll",
+          "itemWidth": 15,
+          "textStyle": {
+            "color": "#5E5E5E"
+          },
+          "itemHeight": 7,
+          "pageIconColor": "#5E5E5E",
+          "pageTextStyle": {
+            "color": "#5E5E5E"
+          },
+          "pageIconInactiveColor": "#5E5E5E"
+        },
+        "series": [
+          {
+            "z": 0,
+            "name": "{{variable.name}} [{{variable.unit}}] ({{device.name}})",
+            "step": false,
+            "type": "line",
+            "stack": null,
+            "symbol": null,
+            "markLine": {},
+            "animation": false,
+            "itemStyle": {
+              "color": "#f75105",
+              "opacity": 0.8,
+              "borderColor": "#f75105"
+            },
+            "lineStyle": {
+              "color": "#f75105",
+              "width": 2
+            },
+            "showSymbol": false,
+            "symbolSize": 8,
+            "yAxisIndex": 0,
+            "connectNulls": true
+          }
+        ],
+        "tooltip": {
+          "confine": true,
+          "trigger": "axis"
+        },
+        "dataZoom": [
+          {
+            "left": 45,
+            "show": true,
+            "right": 45,
+            "realtime": false,
+            "textStyle": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "filterMode": "none",
+            "xAxisIndex": 0,
+            "dataBackground": {
+              "areaStyle": {
+                "color": "#5E5E5E"
+              }
+            }
+          }
+        ]
+      },
+      "dataFetch": "inherit",
+      "seriesTypes": [
+        "line"
+      ],
+      "dataEntities": {
+        "devices": [],
+        "variables": [
+          {
+            "name": "ma",
+            "span": "inherit",
+            "unit": null,
+            "color": "#f75105",
+            "label": "raw_adc",
+            "period": null,
+            "chartType": "line",
+            "variableColor": {
+              "a": 1,
+              "b": 114,
+              "g": 109,
+              "r": 224
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "horizontalLinesAndLabels": [
+        {}
+      ]
+    },
+    "uxSettings": {
+      "font": {
+        "size": 14,
+        "family": "Nunito"
+      },
+      "hoverGroup": true,
+      "__customStyle": null,
+      "decimalPlaces": null,
+      "timestampFormat": null
+    }
+  },
+  {
+    "__model__": "widget",
+    "name": "Battery Percentage",
+    "position": {
+      "h": 8,
+      "w": 6,
+      "x": 0,
+      "y": 0,
+      "6855beb9584891008c287dd0": {
+        "h": 5,
+        "w": 24,
+        "x": 0,
+        "y": 18
+      }
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "type": "series",
+    "settings": {
+      "config": {
+        "grid": {
+          "top": 10,
+          "left": 60,
+          "right": 60,
+          "bottom": 60,
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "z": 2,
+            "name": "",
+            "type": "time",
+            "nameGap": 28,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "axisTick": null,
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5E5E5E"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "minInterval": "",
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#A4A5A7"
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "max": 100,
+            "min": 50,
+            "name": "Battery Percentage [%]",
+            "show": true,
+            "type": "value",
+            "offset": 0,
+            "nameGap": 70,
+            "axisLine": {
+              "lineStyle": {
+                "color": "#5e5e5e40"
+              }
+            },
+            "position": "left",
+            "axisLabel": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "gridIndex": 0,
+            "splitLine": {
+              "lineStyle": {
+                "color": [
+                  "#5e5e5e"
+                ],
+                "opacity": 0.1
+              }
+            },
+            "minInterval": "",
+            "nameLocation": "center",
+            "nameTextStyle": {
+              "color": "#5E5E5E"
+            }
+          }
+        ],
+        "legend": {
+          "top": 0,
+          "show": false,
+          "type": "scroll",
+          "itemWidth": 15,
+          "textStyle": {
+            "color": "#5E5E5E"
+          },
+          "itemHeight": 7,
+          "pageIconColor": "#5E5E5E",
+          "pageTextStyle": {
+            "color": "#5E5E5E"
+          },
+          "pageIconInactiveColor": "#5E5E5E"
+        },
+        "series": [
+          {
+            "z": 0,
+            "name": "{{variable.name}} [{{variable.unit}}] ({{device.name}})",
+            "step": false,
+            "type": "line",
+            "stack": null,
+            "symbol": null,
+            "markLine": {
+              "data": [
+                {
+                  "name": "Battery Replacement",
+                  "label": {
+                    "show": true,
+                    "padding": [
+                      0,
+                      50,
+                      0,
+                      50
+                    ],
+                    "position": "insideMiddleTop",
+                    "formatter": "{b}"
+                  },
+                  "yAxis": 80,
+                  "lineStyle": {
+                    "type": "dashed",
+                    "color": "#fae300"
+                  }
+                }
+              ],
+              "symbol": [
+                "none"
+              ]
+            },
+            "animation": false,
+            "itemStyle": {
+              "color": "#f75105",
+              "opacity": 0.8,
+              "borderColor": "#f75105"
+            },
+            "lineStyle": {
+              "color": "#f75105",
+              "width": 2
+            },
+            "showSymbol": false,
+            "symbolSize": 8,
+            "yAxisIndex": 0,
+            "connectNulls": true
+          }
+        ],
+        "tooltip": {
+          "confine": true,
+          "trigger": "axis"
+        },
+        "dataZoom": [
+          {
+            "left": 45,
+            "show": true,
+            "right": 45,
+            "realtime": false,
+            "textStyle": {
+              "color": "#5E5E5E",
+              "fontSize": 11
+            },
+            "filterMode": "none",
+            "xAxisIndex": 0,
+            "dataBackground": {
+              "areaStyle": {
+                "color": "#5E5E5E"
+              }
+            }
+          }
+        ]
+      },
+      "dataFetch": "inherit",
+      "seriesTypes": [
+        "line"
+      ],
+      "dataEntities": {
+        "devices": [],
+        "variables": [
+          {
+            "name": "ma",
+            "span": "inherit",
+            "unit": null,
+            "color": "#f75105",
+            "label": "battery_percent",
+            "period": null,
+            "chartType": "line",
+            "variableColor": {
+              "a": 1,
+              "b": 114,
+              "g": 109,
+              "r": 224
+            },
+            "aggregationMethod": "last_value"
+          }
+        ]
+      },
+      "horizontalLinesAndLabels": [
+        {
+          "data": [
+            {
+              "name": "Battery Replacement",
+              "label": {
+                "show": true,
+                "padding": [
+                  0,
+                  50,
+                  0,
+                  50
+                ],
+                "position": "insideMiddleTop",
+                "formatter": "{b}"
+              },
+              "yAxis": 80,
+              "lineStyle": {
+                "type": "dashed",
+                "color": "#fae300"
+              }
+            }
+          ],
+          "symbol": [
+            "none"
+          ]
+        }
+      ]
+    },
+    "uxSettings": {
+      "font": {
+        "size": 14,
+        "family": "Nunito"
+      },
+      "hoverGroup": true,
+      "__customStyle": null,
+      "decimalPlaces": 0,
+      "timestampFormat": null
+    }
+  },
+  {
+    "__model__": "layer",
+    "name": "Default Layer: Ubidots dark design",
+    "settings": {
+      "label": "default-layer:-ubidots-dark-design",
+      "width": "setByDashboard",
+      "visible": true,
+      "alignment": "setByDashboard",
+      "customWidth": 0,
+      "displayName": "default layer"
+    },
+    "layer": "6855beb9584891008c287dd0",
+    "position": 0
+  }
+]
