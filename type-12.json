@@ -1412,8 +1412,8 @@
         ],
         "yAxis": [
           {
-            "max": "dataMax",
-            "min": "dataMin",
+            "max": 100,
+            "min": 50,
             "name": "Battery Percentage [% ]",
             "show": true,
             "type": "value",
