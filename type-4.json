@@ -2,7 +2,7 @@
   {
     "__model__": "dashboard",
     "label": "type-4-thermocouple-template",
-    "name": "Type4-Thermocouple",
+    "name": "Type4-thermocouple-template",
     "description": "",
     "tags": [],
     "context": {
